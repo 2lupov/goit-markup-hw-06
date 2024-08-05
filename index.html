@@ -18,6 +18,7 @@
     <title>WebStudio</title>
     <style type="text/css" id="operaUserStyle"></style>
   </head>
+  <script src="./script.js"></script>
   <body>
     <header class="had-container">
       <div class="container container-nav">
@@ -30,7 +31,6 @@
             <li><a class="nav-menu" href="">Portfolio</a></li>
             <li><a class="nav-menu" href="">Contacts</a></li>
           </ul>
-          <button class="menu-toggle" aria-label="Open menu">☰</button>
         </nav>
         <address class="address">
           <ul class="address-container">
@@ -555,13 +555,5 @@
         </form>
       </div>
     </div>
-    <script>
-      const menuToggle = document.querySelector(".menu-toggle");
-      const nav = document.querySelector(".nav");
-
-      menuToggle.addEventListener("click", () => {
-        nav.classList.toggle("is-open");
-      });
-    </script>
   </body>
 </html>

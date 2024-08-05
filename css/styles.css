@@ -8,6 +8,7 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #fff;
   color: #434455;
+  overflow-x: hidden;
 }
 h1,
 h2,
@@ -21,6 +22,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;		
+  height: auto;
 }
 
 a {
@@ -32,6 +35,7 @@ ol,
 li {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 input {
@@ -42,6 +46,14 @@ textarea {
   resize: none;
 }
 
+/* Адаптивный контейнер */
+
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+}
 /* Header */
 
 .had-container {
@@ -168,6 +180,31 @@ ul {
 .tel-mail:focus {
   color: #404bbf;
 }
+
+	
+  		
+  /* Mobile styles */		
+  @media (max-width: 767px) {		
+  .container-nav {		
+    flex-direction: column;		
+    align-items: flex-start;		
+  }		
+  		
+  .nav {		
+    display: none;		
+    flex-direction: column;		
+    width: 100%;		
+  }		
+  	
+  .menu-toggle {		
+    display: block;		
+  }		
+	
+  .address-container {		
+     flex-direction: column;		
+      align-items: flex-start;		
+   }		
+	}
 
 /* Main */
 
@@ -864,3 +901,6 @@ ul {
   background-color: #404bbf;
   cursor: pointer;
 }
+
+/* Adapt */
+

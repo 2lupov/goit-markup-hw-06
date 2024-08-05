@@ -107,6 +107,7 @@ address {
   text-decoration: none;
   padding: 16px 0;
   display: block;
+  margin-right: 20px;
 }
 
 .logo span {
@@ -118,6 +119,7 @@ address {
   text-transform: uppercase;
   color: #2e2f42;
   text-decoration: none;
+  margin-right: 20px;
 }
 
 .header-logo {
